@@ -1,0 +1,270 @@
+{
+  "schemaVersion": 1,
+  "opportunities": [
+    {
+      "id": "pond-resource-1",
+      "title": "Take part in a housing discussion",
+      "organization": "Municipality of Princeton",
+      "description": "Check the agenda for a housing-related public meeting and its public comment instructions.",
+      "canonicalUrl": "https://princetonnj.gov/AgendaCenter",
+      "source": {
+        "name": "Municipality of Princeton",
+        "url": "https://princetonnj.gov/AgendaCenter",
+        "kind": "official"
+      },
+      "issues": ["housing"],
+      "coverage": {
+        "scope": "local",
+        "country": "US",
+        "region": "NJ",
+        "label": "Princeton, NJ",
+        "locality": "Princeton"
+      },
+      "actionType": "meeting",
+      "kind": "resource",
+      "freshness": {
+        "checkedAt": "2026-09-23T00:00:00Z",
+        "maxAgeDays": 90
+      },
+      "verification": {
+        "status": "source-checked",
+        "note": "Organizer resource page checked for the prototype; no upcoming event or opening independently verified."
+      },
+      "civicIssues": ["housing"]
+    },
+    {
+      "id": "pond-resource-2",
+      "title": "Help shape the places we live",
+      "organization": "Princeton Planning Board",
+      "description": "Explore upcoming planning meetings and learn how to share your perspective on local development.",
+      "canonicalUrl": "https://www.princetonnj.gov/524/Planning-Board",
+      "source": {
+        "name": "Princeton Planning Board",
+        "url": "https://www.princetonnj.gov/524/Planning-Board",
+        "kind": "official"
+      },
+      "issues": ["housing", "transportation"],
+      "coverage": {
+        "scope": "local",
+        "country": "US",
+        "region": "NJ",
+        "label": "Princeton, NJ",
+        "locality": "Princeton"
+      },
+      "actionType": "comment",
+      "kind": "resource",
+      "freshness": {
+        "checkedAt": "2026-09-23T00:00:00Z",
+        "maxAgeDays": 90
+      },
+      "verification": {
+        "status": "source-checked",
+        "note": "Organizer resource page checked for the prototype; no upcoming event or opening independently verified."
+      },
+      "civicIssues": ["housing", "transportation"]
+    },
+    {
+      "id": "pond-resource-3",
+      "title": "Lend a hand close to home",
+      "organization": "Sustainable Princeton",
+      "description": "Join the volunteer list for community events and local sustainability projects.",
+      "canonicalUrl": "https://www.sustainableprinceton.org/get-involved/",
+      "source": {
+        "name": "Sustainable Princeton",
+        "url": "https://www.sustainableprinceton.org/get-involved/",
+        "kind": "official"
+      },
+      "issues": ["environment"],
+      "coverage": {
+        "scope": "local",
+        "country": "US",
+        "region": "NJ",
+        "label": "Princeton, NJ",
+        "locality": "Princeton"
+      },
+      "actionType": "volunteer",
+      "kind": "resource",
+      "freshness": {
+        "checkedAt": "2026-09-23T00:00:00Z",
+        "maxAgeDays": 90
+      },
+      "verification": {
+        "status": "source-checked",
+        "note": "Organizer resource page checked for the prototype; no upcoming event or opening independently verified."
+      },
+      "civicIssues": ["environment"]
+    },
+    {
+      "id": "pond-resource-4",
+      "title": "Bring sustainability to your block",
+      "organization": "Sustainable Princeton",
+      "description": "Learn about S.T.A.R. Neighborhoods and work with neighbors on practical environmental projects.",
+      "canonicalUrl": "https://www.sustainableprinceton.org/get-involved/",
+      "source": {
+        "name": "Sustainable Princeton",
+        "url": "https://www.sustainableprinceton.org/get-involved/",
+        "kind": "official"
+      },
+      "issues": ["environment"],
+      "coverage": {
+        "scope": "local",
+        "country": "US",
+        "region": "NJ",
+        "label": "Princeton, NJ",
+        "locality": "Princeton"
+      },
+      "actionType": "organize",
+      "kind": "resource",
+      "freshness": {
+        "checkedAt": "2026-09-23T00:00:00Z",
+        "maxAgeDays": 90
+      },
+      "verification": {
+        "status": "source-checked",
+        "note": "Organizer resource page checked for the prototype; no upcoming event or opening independently verified."
+      },
+      "civicIssues": ["environment"]
+    },
+    {
+      "id": "pond-resource-5",
+      "title": "Make civic participation a habit",
+      "organization": "League of Women Voters of the Princeton Area",
+      "description": "Explore local civic resources and ways to connect with the League\u2019s work.",
+      "canonicalUrl": "https://www.lwvprinceton.org/for-citizens",
+      "source": {
+        "name": "League of Women Voters of the Princeton Area",
+        "url": "https://www.lwvprinceton.org/for-citizens",
+        "kind": "official"
+      },
+      "issues": ["democracy"],
+      "coverage": {
+        "scope": "local",
+        "country": "US",
+        "region": "NJ",
+        "label": "Princeton, NJ",
+        "locality": "Princeton"
+      },
+      "actionType": "learn",
+      "kind": "resource",
+      "freshness": {
+        "checkedAt": "2026-09-23T00:00:00Z",
+        "maxAgeDays": 90
+      },
+      "verification": {
+        "status": "source-checked",
+        "note": "Organizer resource page checked for the prototype; no upcoming event or opening independently verified."
+      },
+      "civicIssues": ["democracy"]
+    },
+    {
+      "id": "pond-resource-6",
+      "title": "Start a conversation with your legislators",
+      "organization": "New Jersey Legislature",
+      "description": "Find your district\u2019s representatives and contact their offices about the issue you\u2019re reading about.",
+      "canonicalUrl": "https://www.njleg.state.nj.us/legislative-roster",
+      "source": {
+        "name": "New Jersey Legislature",
+        "url": "https://www.njleg.state.nj.us/legislative-roster",
+        "kind": "official"
+      },
+      "issues": [
+        "housing",
+        "environment",
+        "education",
+        "transportation",
+        "immigration",
+        "healthcare",
+        "democracy",
+        "reproductive",
+        "guns",
+        "labor",
+        "safety"
+      ],
+      "coverage": {
+        "scope": "state",
+        "country": "US",
+        "region": "NJ",
+        "label": "New Jersey \u00b7 statewide"
+      },
+      "actionType": "contact",
+      "kind": "resource",
+      "freshness": {
+        "checkedAt": "2026-09-23T00:00:00Z",
+        "maxAgeDays": 90
+      },
+      "verification": {
+        "status": "source-checked",
+        "note": "Organizer resource page checked for the prototype; no upcoming event or opening independently verified."
+      },
+      "civicIssues": [
+        "housing",
+        "environment",
+        "education",
+        "transportation",
+        "immigration",
+        "healthcare",
+        "democracy",
+        "reproductive_rights",
+        "justice_public_safety",
+        "labor",
+        "economic_security",
+        "civil_rights"
+      ]
+    },
+    {
+      "id": "pond-resource-7",
+      "title": "Bring your perspective to a public hearing",
+      "organization": "New Jersey Legislature",
+      "description": "Look for a committee hearing on this issue. Check the listing for participation instructions before attending.",
+      "canonicalUrl": "https://www.njleg.state.nj.us/legislative-calendar",
+      "source": {
+        "name": "New Jersey Legislature",
+        "url": "https://www.njleg.state.nj.us/legislative-calendar",
+        "kind": "official"
+      },
+      "issues": [
+        "housing",
+        "environment",
+        "education",
+        "transportation",
+        "immigration",
+        "healthcare",
+        "democracy",
+        "reproductive",
+        "guns",
+        "labor",
+        "safety"
+      ],
+      "coverage": {
+        "scope": "state",
+        "country": "US",
+        "region": "NJ",
+        "label": "New Jersey \u00b7 statewide"
+      },
+      "actionType": "meeting",
+      "kind": "resource",
+      "freshness": {
+        "checkedAt": "2026-09-23T00:00:00Z",
+        "maxAgeDays": 90
+      },
+      "verification": {
+        "status": "source-checked",
+        "note": "Organizer resource page checked for the prototype; no upcoming event or opening independently verified."
+      },
+      "civicIssues": [
+        "housing",
+        "environment",
+        "education",
+        "transportation",
+        "immigration",
+        "healthcare",
+        "democracy",
+        "reproductive_rights",
+        "justice_public_safety",
+        "labor",
+        "economic_security",
+        "civil_rights"
+      ]
+    }
+  ]
+}

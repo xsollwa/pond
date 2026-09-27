@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Pond",
+  "version": "0.2.0",
+  "description": "Understand civic issues and find explainable ways to participate near you.",
+  "permissions": ["storage", "scripting"],
+  "action": {
+    "default_title": "Find a way to get involved",
+    "default_popup": "index.html"
+  },
+  "icons": {
+    "16": "icons/pond-16.png",
+    "48": "icons/pond-48.png",
+    "128": "icons/pond-128.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'none'; connect-src 'self' http://127.0.0.1:8787"
+  },
+  "sidebar_action": {
+    "default_title": "Pond",
+    "default_panel": "index.html?panel=1",
+    "default_icon": "icons/pond-48.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "pond@local.example",
+      "strict_min_version": "128.0"
+    }
+  },
+  "optional_host_permissions": ["http://*/*", "https://*/*"],
+  "options_ui": {
+    "page": "settings.html",
+    "open_in_tab": true
+  },
+  "background": {
+    "scripts": ["background.js"]
+  }
+}

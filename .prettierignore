@@ -1,0 +1,11 @@
+dist
+node_modules
+legacy
+pnpm-lock.yaml
+tests/core.test.js
+tests/housing.html
+tests/fixtures/pages
+
+tests/fixtures/intelligence/pages
+.wrangler
+release

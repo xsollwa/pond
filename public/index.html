@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pond — a small step starts here</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <header>
+      <div class="brand" aria-label="Pond">
+        <span class="mark" aria-hidden="true">p</span>pond
+      </div>
+      <a href="settings.html" target="_blank" rel="noopener" class="location"
+        >Settings</a
+      ><span id="location" class="location"></span>
+    </header>
+    <main>
+      <section class="intro">
+        <p class="eyebrow">A SMALL STEP STARTS HERE</p>
+        <h1>From reading<br />to showing up.</h1>
+        <p class="lede">Find your way into local civic life.</p>
+        <button id="open-panel" class="panel-toggle" type="button" hidden>
+          Open beside this page ↗
+        </button>
+      </section>
+      <p id="page-title" class="page-title"></p>
+      <div
+        id="status"
+        role="status"
+        aria-live="polite"
+        aria-atomic="true"
+      ></div>
+      <p id="geography" class="geography"></p>
+      <section id="results" aria-labelledby="results-heading" hidden>
+        <div class="section-heading">
+          <h2 id="results-heading">Ways to get involved</h2>
+          <span id="count"></span>
+        </div>
+        <p class="dataset-note">
+          Example resources · confirm details before participating
+        </p>
+        <p id="stale" class="notice" hidden>
+          Some source details need rechecking. These are starting points, not
+          confirmed openings.
+        </p>
+        <div id="opportunities"></div>
+      </section>
+      <div class="controls">
+        <button id="retry" class="primary" type="button">Read this page</button
+        ><label for="issue">Or explore an issue</label
+        ><select id="issue">
+          <option value="">Choose an issue</option>
+        </select>
+        <p id="panel-message" role="status"></p>
+      </div>
+    </main>
+    <footer>
+      <span class="privacy-dot" aria-hidden="true"></span>Read locally. Remote
+      analysis requires your consent.
+    </footer>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

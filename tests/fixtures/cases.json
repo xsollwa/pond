@@ -1,0 +1,281 @@
+[
+  {
+    "id": "housing-local",
+    "file": "housing-local.html",
+    "expectedIssue": "housing",
+    "expectedPlace": "Princeton, NJ",
+    "expectedScope": "local",
+    "expectedStatus": "recognized",
+    "expectedSecondary": []
+  },
+  {
+    "id": "housing-state",
+    "file": "housing-state.html",
+    "expectedIssue": "housing",
+    "expectedPlace": "California",
+    "expectedScope": "state",
+    "expectedStatus": "recognized",
+    "expectedSecondary": []
+  },
+  {
+    "id": "transit",
+    "file": "transit.html",
+    "expectedIssue": "transportation",
+    "expectedPlace": "Princeton, NJ",
+    "expectedScope": "local",
+    "expectedStatus": "recognized",
+    "expectedSecondary": []
+  },
+  {
+    "id": "bike",
+    "file": "bike.html",
+    "expectedIssue": "transportation",
+    "expectedPlace": "New York City, NY",
+    "expectedScope": "local",
+    "expectedStatus": "recognized",
+    "expectedSecondary": []
+  },
+  {
+    "id": "climate",
+    "file": "climate.html",
+    "expectedIssue": "environment",
+    "expectedPlace": "United States",
+    "expectedScope": "national",
+    "expectedStatus": "recognized",
+    "expectedSecondary": []
+  },
+  {
+    "id": "water",
+    "file": "water.html",
+    "expectedIssue": "environment",
+    "expectedPlace": "Princeton, NJ",
+    "expectedScope": "local",
+    "expectedStatus": "recognized",
+    "expectedSecondary": []
+  },
+  {
+    "id": "school-board",
+    "file": "school-board.html",
+    "expectedIssue": "education",
+    "expectedPlace": "Princeton, NJ",
+    "expectedScope": "local",
+    "expectedStatus": "recognized",
+    "expectedSecondary": []
+  },
+  {
+    "id": "education-state",
+    "file": "education-state.html",
+    "expectedIssue": "education",
+    "expectedPlace": "New Jersey",
+    "expectedScope": "state",
+    "expectedStatus": "recognized",
+    "expectedSecondary": []
+  },
+  {
+    "id": "healthcare",
+    "file": "healthcare.html",
+    "expectedIssue": "healthcare",
+    "expectedPlace": "United States",
+    "expectedScope": "national",
+    "expectedStatus": "recognized",
+    "expectedSecondary": []
+  },
+  {
+    "id": "health-local",
+    "file": "health-local.html",
+    "expectedIssue": "healthcare",
+    "expectedPlace": "New Jersey",
+    "expectedScope": "state",
+    "expectedStatus": "recognized",
+    "expectedSecondary": []
+  },
+  {
+    "id": "voting",
+    "file": "voting.html",
+    "expectedIssue": "democracy",
+    "expectedPlace": "Princeton, NJ",
+    "expectedScope": "local",
+    "expectedStatus": "recognized",
+    "expectedSecondary": []
+  },
+  {
+    "id": "redistricting",
+    "file": "redistricting.html",
+    "expectedIssue": "democracy",
+    "expectedPlace": "New Jersey",
+    "expectedScope": "state",
+    "expectedStatus": "recognized",
+    "expectedSecondary": []
+  },
+  {
+    "id": "labor",
+    "file": "labor.html",
+    "expectedIssue": "labor",
+    "expectedPlace": "Princeton, NJ",
+    "expectedScope": "local",
+    "expectedStatus": "recognized",
+    "expectedSecondary": []
+  },
+  {
+    "id": "wages",
+    "file": "wages.html",
+    "expectedIssue": "labor",
+    "expectedPlace": "California",
+    "expectedScope": "state",
+    "expectedStatus": "recognized",
+    "expectedSecondary": []
+  },
+  {
+    "id": "police",
+    "file": "police.html",
+    "expectedIssue": "safety",
+    "expectedPlace": "Princeton, NJ",
+    "expectedScope": "local",
+    "expectedStatus": "recognized",
+    "expectedSecondary": []
+  },
+  {
+    "id": "emergency",
+    "file": "emergency.html",
+    "expectedIssue": "safety",
+    "expectedPlace": "Princeton, NJ",
+    "expectedScope": "local",
+    "expectedStatus": "recognized",
+    "expectedSecondary": []
+  },
+  {
+    "id": "immigration",
+    "file": "immigration.html",
+    "expectedIssue": "immigration",
+    "expectedPlace": "United States",
+    "expectedScope": "national",
+    "expectedStatus": "recognized",
+    "expectedSecondary": []
+  },
+  {
+    "id": "reproductive",
+    "file": "reproductive.html",
+    "expectedIssue": "reproductive",
+    "expectedPlace": "New Jersey",
+    "expectedScope": "state",
+    "expectedStatus": "recognized",
+    "expectedSecondary": []
+  },
+  {
+    "id": "guns",
+    "file": "guns.html",
+    "expectedIssue": "guns",
+    "expectedPlace": "New Jersey",
+    "expectedScope": "state",
+    "expectedStatus": "recognized",
+    "expectedSecondary": []
+  },
+  {
+    "id": "mixed",
+    "file": "mixed.html",
+    "expectedIssue": "housing",
+    "expectedPlace": "Princeton, NJ",
+    "expectedScope": "local",
+    "expectedStatus": "recognized",
+    "expectedSecondary": ["transportation"]
+  },
+  {
+    "id": "international",
+    "file": "international.html",
+    "expectedIssue": "transportation",
+    "expectedPlace": "London, UK",
+    "expectedScope": "international",
+    "expectedStatus": "recognized",
+    "expectedSecondary": []
+  },
+  {
+    "id": "unknown-place",
+    "file": "unknown-place.html",
+    "expectedIssue": "housing",
+    "expectedPlace": null,
+    "expectedScope": "unknown",
+    "expectedStatus": "recognized",
+    "expectedSecondary": []
+  },
+  {
+    "id": "weak",
+    "file": "weak.html",
+    "expectedIssue": null,
+    "expectedPlace": null,
+    "expectedScope": "unknown",
+    "expectedStatus": "unrecognized",
+    "expectedSecondary": []
+  },
+  {
+    "id": "recipe",
+    "file": "recipe.html",
+    "expectedIssue": null,
+    "expectedPlace": null,
+    "expectedScope": "unknown",
+    "expectedStatus": "unrecognized",
+    "expectedSecondary": []
+  },
+  {
+    "id": "shopping",
+    "file": "shopping.html",
+    "expectedIssue": null,
+    "expectedPlace": null,
+    "expectedScope": "unknown",
+    "expectedStatus": "unrecognized",
+    "expectedSecondary": []
+  },
+  {
+    "id": "sports",
+    "file": "sports.html",
+    "expectedIssue": null,
+    "expectedPlace": null,
+    "expectedScope": "unknown",
+    "expectedStatus": "unrecognized",
+    "expectedSecondary": []
+  },
+  {
+    "id": "software",
+    "file": "software.html",
+    "expectedIssue": null,
+    "expectedPlace": null,
+    "expectedScope": "unknown",
+    "expectedStatus": "unrecognized",
+    "expectedSecondary": []
+  },
+  {
+    "id": "game",
+    "file": "game.html",
+    "expectedIssue": null,
+    "expectedPlace": null,
+    "expectedScope": "unknown",
+    "expectedStatus": "unrecognized",
+    "expectedSecondary": []
+  },
+  {
+    "id": "metadata-noise",
+    "file": "metadata-noise.html",
+    "expectedIssue": null,
+    "expectedPlace": null,
+    "expectedScope": "unknown",
+    "expectedStatus": "unrecognized",
+    "expectedSecondary": []
+  },
+  {
+    "id": "short",
+    "file": "short.html",
+    "expectedIssue": null,
+    "expectedPlace": null,
+    "expectedScope": "unknown",
+    "expectedStatus": "insufficient",
+    "expectedSecondary": []
+  },
+  {
+    "id": "tentative",
+    "file": "tentative.html",
+    "expectedIssue": "housing",
+    "expectedPlace": null,
+    "expectedScope": "unknown",
+    "expectedStatus": "low-confidence",
+    "expectedSecondary": []
+  }
+]

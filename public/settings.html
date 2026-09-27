@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pond settings</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <header><div class="brand">pond</div></header>
+    <main>
+      <section class="intro">
+        <p class="eyebrow">WELCOME TO POND</p>
+        <h1>A little context.<br />A next step.</h1>
+        <p class="lede">
+          Choose where Pond can read, add your area, and enable issue
+          recognition.
+        </p>
+      </section>
+      <section>
+        <h2>Automatic website access</h2>
+        <p>
+          Pond can read ordinary websites after you grant access once. Browser
+          settings, extension stores and other restricted pages remain
+          unavailable.
+        </p>
+        <button id="enable-all" class="primary" type="button">
+          Enable on supported websites</button
+        ><label for="site">Or allow one website</label
+        ><input id="site" type="url" placeholder="https://example.org" /><button
+          id="enable-site"
+          type="button"
+        >
+          Allow this website</button
+        ><button id="disable-access" type="button">
+          Remove website access
+        </button>
+        <p id="settings-status" role="status" aria-live="polite"></p>
+      </section>
+      <section>
+        <h2>Your area</h2>
+        <p>
+          Optional. Enter a city and state to match local resources. Pond never
+          uses an article’s location as yours.
+        </p>
+        <label for="city">City</label
+        ><input id="city" maxlength="100" placeholder="Princeton" /><label
+          for="region"
+          >State or region</label
+        ><input id="region" maxlength="100" placeholder="NJ" /><label
+          for="country"
+          >Country code</label
+        ><input id="country" maxlength="2" placeholder="US" />
+      </section>
+      <section>
+        <h2>Understand what you’re reading</h2>
+        <p>
+          When enabled, Pond sends a short extract (up to 16,000 characters),
+          selected metadata and the site’s domain to Pond’s hosted service and
+          Anthropic to identify civic issues. No full URL, HTML, form fields or
+          user location is sent. Text can still contain personal information.
+        </p>
+        <label
+          ><input id="consent" type="checkbox" /> Enable issue recognition on
+          allowed websites</label
+        ><button id="save-settings" type="button" class="primary">
+          Save settings
+        </button>
+      </section>
+    </main>
+    <footer>No account or API key needed. You control website access.</footer>
+    <script type="module" src="settings.js"></script>
+  </body>
+</html>

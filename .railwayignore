@@ -1,0 +1,13 @@
+.git
+node_modules
+.cache
+.server
+dist
+test-results
+.env
+.env.*
+*.pem
+*.key
+*.log
+.codex
+.agents

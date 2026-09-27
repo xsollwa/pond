@@ -1,0 +1,14 @@
+*
+!Dockerfile
+!package.json
+!pnpm-lock.yaml
+!pnpm-workspace.yaml
+!src
+!src/**
+!deployment
+!deployment/extension-identity.json
+!scripts
+!scripts/build-server.mjs
+**/.env*
+**/*.pem
+**/*.key

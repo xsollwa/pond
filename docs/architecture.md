@@ -1,0 +1,21 @@
+# Content Intelligence architecture
+
+The production entry point is `src/ui/main.ts`; it no longer imports the old keyword analyzer or old application pipeline. Those modules and their tests remain only for comparison and regression history.
+
+1. Settings requests optional HTTP/S host permissions in a user gesture, then records the chosen scope. The background reconciles persistent registered content scripts on startup, consent and permission changes. Chromium uses a service worker; Firefox uses a background script. The toolbar is a view, not a repeated temporary access grant.
+2. The content script extracts at most 32 evidence blocks / 16,000 text characters, retaining title, metadata, selected schema fields, headings, paragraphs, provenance, salience and focused-post grouping. Navigation, forms, editable text, hidden content and common advertising elements are excluded. This is heuristic extraction, not full accessibility-tree or real-social-site compatibility.
+3. MutationObserver, visibility, selection and scroll events schedule bounded extraction after a quiet period, with a one-second throttle and four-second maximum wait. Hashes suppress unchanged snapshots. Article viewport changes do not invalidate semantic identity. Social focus changes can do so. There is no polling loop that reads the DOM every second.
+4. Background analysis uses the `IssueAnalyzer` contract. The configured semantic service is primary only with separate recognition consent; its address is compiled into the build. A conservative deterministic implementation reports insufficient/unknown when analysis is unavailable. It does not pretend to distinguish all non-civic pages offline.
+5. Both browser and server validate the strict versioned `IssueAnalysis` schema, taxonomy IDs/labels, claim references and literal evidence quotations. Grounding does not prove semantic entailment. Page text is untrusted data in the server prompt. Model confidence is labeled uncalibrated, never a normalized keyword score.
+6. `ContextObject` joins analysis with independently entered coarse user location. Retrieval consumes this context. Existing resource tags map to the new hierarchy; broad legislative resources cover economic security and civil rights. Content geography never becomes the reader’s location. Unknown location yields no supposedly local recommendations.
+7. Abort controllers cancel stale analysis. Results and snapshots live only in bounded background memory; analysis reuse has a 15-minute TTL and 20-entry limit. Navigation, access removal and setting changes invalidate state. Background suspension can recover the current snapshot from the existing content script.
+
+## Local semantic feasibility
+
+A bundled zero-shot NLI model remains a possible optional analyzer, not a shipped feature. Transformers.js documents independent multi-label zero-shot scoring, but this alone does not provide the required entities, geography or evidence-grounded context. The inspected Xenova DeBERTa xsmall ONNX quantized artifact is 87.2 MB before tokenizer/runtime assets. We did not silently download or bundle it, and did not benchmark local latency or accuracy. The compact fallback and hosted server preserve an immediately loadable extension while that tradeoff remains open.
+
+Sources: [Transformers.js pipelines](https://huggingface.co/docs/transformers.js/api/pipelines), [model artifacts](https://huggingface.co/Xenova/nli-deberta-v3-xsmall/tree/main/onnx).
+
+## Known limits
+
+The semantic backend is deployed on Cloudflare Workers and validated with real-model live end-to-end tests for the Chrome, Edge (Chromium) and Firefox builds; see deployment.md. Its prompt asks for JSON and validation rejects malformed output; it does not use provider-native schema-constrained decoding. The taxonomy has 12 parents and 50 leaves; probabilities are independent model estimates, not calibrated guarantees. Automatic geolocation is not implemented; explicit coarse entry is the supported path. The local dataset contains seven evergreen resources and has limited geography coverage. Independent annotation, real-site social-feed validation, testing in the Microsoft Edge binary itself and web-store distribution remain follow-up work.

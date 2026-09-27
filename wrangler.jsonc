@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "pond-api",
+  "main": "worker/index.ts",
+  "compatibility_date": "2026-09-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "vars": {
+    "POND_MODEL": "claude-sonnet-5",
+    "POND_DAILY_LIMIT": "200",
+    "POND_CLIENT_DAILY_LIMIT": "40",
+  },
+  // ANTHROPIC_API_KEY is a Worker secret (wrangler secret put), never a var.
+  "durable_objects": {
+    "bindings": [{ "name": "QUOTA", "class_name": "PondQuota" }],
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["PondQuota"] }],
+  "observability": { "enabled": true },
+}
